@@ -1,0 +1,394 @@
+@font-face{
+    font-family: BieneB, PT Sans, sans-serif;
+    src: url('../font/Nienetresocial_Bold/Bienetresocial_Bold.eot') format('embedded-opentype'),
+         url('../font/Nienetresocial_Bold/Bienetresocial_Bold.ttf') format('truetype'),
+         url('../font/Nienetresocial_Bold/Bienetresocial_Bold.woff') format('woff'),
+         url('../font/Nienetresocial_Bold/Bienetresocial_Bold.svg') format('svg');
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*----------------------HEADER---------------------*/
+header{
+    min-height: 400px; /* kontrolli */
+    background: url(img/background-image.jpg) no-repeat 50% top; 
+    text-align: left;
+}
+
+#header-text-container p{
+    padding-bottom: 10px;
+    font-family: PT Sans;
+    font-size: 20px;
+    color: #222222;
+}
+
+#header-text-container a{
+    font-family: PT Sans;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #a62300;
+}
+
+#ribbon{
+    padding-bottom: 35px;
+}
+
+#ajalugu-logo{
+    padding-bottom: 50px;
+}
+
+#header-text-container{
+    padding-bottom: 130px;
+}
+/*----------------------CONTENT---------------------*/
+#process-text{
+    padding-bottom: 25px;
+    font-family: BieneB;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: left;
+    color: #3f2916;
+}
+#process-small-text{
+    padding-bottom: 25px;
+    font-family: PT Sans;
+    font-size: 18px;
+    color: #222222;
+}
+/*Process - accordion*/
+.accordion-toggle {
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0px;
+    padding: 18px 10px 10px 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: solid 1px #ffe756;
+    display: inline-block;
+}
+.accordion-title-left-text{
+    color: #3f2916;
+    font-family: BieneB;
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+}
+
+.accordion-title-right-text{
+    color: #3f2916;
+    font-family: BieneB;
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+}
+
+.accordion-content.default {
+    display: none;
+}
+
+.accordion-toggle:hover { 
+    background-color: #fffdef;
+    text-decoration: none;
+}
+
+.article-row{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: solid 0.5px #cfcdcd; 
+    width: 100%;
+    display: inline-block;
+}
+
+.article-left-column, .article-right-column{
+    float: left;
+}
+
+.article-left-column img{
+    margin-right: 25px; 
+}
+
+.article-right-column h4{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 20px;
+    color: #222222;
+}
+
+.article-row:hover{
+    background-color: #fffdef;
+}
+
+.article-row p{
+    font-family: PT Sans;
+    font-size: 16px;
+    color: #222222;
+    margin-bottom: 0;
+}
+.article-row input{
+    display: inline-block;
+    margin: 0px 38px 0px 20px;
+    transform: scale(2);  
+}
+
+#ready-button{
+    text-align: center;
+}
+
+.button-next, #ready-btn{
+    background-color:  #a62300;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #7b1700;
+    box-sizing: border-box;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 21px 2px;
+    cursor: pointer;
+}
+
+#ready-btn:disabled{
+    background-color:  #b1b1b1;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #999999;
+    box-sizing: border-box;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 21px 2px;
+    cursor: pointer;
+}
+
+#description{
+    padding-top: 70px;
+}
+
+#left-column{
+    float: left;
+}
+
+#right-column{
+    float: right;
+}
+
+#description a{
+    font-family: PT Sans;
+    font-size: 18px;
+    color: #a62300;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+/*----------------------FOOTER---------------------*/
+footer{
+    width: 100%;
+    height: 140px;
+    padding-top: 40px;
+    padding-bottom: 86px;
+    background-color: #3b3530;
+    font-size: 16px;
+}
+
+footer a,
+#tingimused{
+    color: #ffe756;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+#footer-text{
+    padding-top: 15px;
+    color: #ffffff;
+}
+/*----------------------POPUP-BOX---------------------*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    border: 1px solid #888;
+    width: fit-content;
+}
+
+.text-box{
+    padding: 10px 58px 68px 40px;
+}
+
+.modal-content h2{
+    color: #3f2916;
+    font-family: BieneB;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.modal-content p{
+    color: #222222;
+}
+
+.closebtn {
+    line-height: 0;
+    padding-top: 20px;
+    padding-right: 10px;
+    color: #888888;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: default;
+}
+
+
+/* ----------------MEADI QUERIES----------------*/
+@media(max-width: 992px){
+/*--------------------HEADER-------------------*/
+    header{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #ribbon{
+        padding-bottom: 15px;
+    }
+    
+    #ribbon img{
+        width: 50%;
+        height: 50%;
+    }
+
+    #ajalugu-logo img{
+       width: 80%;
+       height: 80%;
+    }
+
+    #ajalugu-logo{
+        padding: 20px;
+    }
+
+    #header-text-container{
+        padding-bottom: 40px;
+    }
+
+    #header-text-container p{
+        font-family: PT Sans;
+        font-size: 16px;
+        text-align: left;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: #222222;
+    }
+
+    #header-text-container br{
+        content: ' ';
+    }
+
+    #header-text-container a{
+        font-size: 25px;
+    }
+/*---------------------CONTENT---------------------------*/
+    #process-text{
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        font-size: 32px;
+    }     
+
+    #process-small-text{
+        padding-left: 10px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    #process-small-text br{
+        content: ' ';
+    }
+/*----------------CONTENT ACCORDION----------------------*/
+    .article-row{
+        float:  none;
+        text-align: center;
+    } 
+
+    .col-xs-12 {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+    .article-row br{
+        content: ' ';
+    }    
+
+    .article-left-column{
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .article-right-column p{
+        text-align: justify;
+    }
+
+    .article-left-column input{
+        margin: 0px 20px 0px 0px;
+    }
+
+/*----------------DESCRIPTION----------------------*/
+    #description{
+        padding: 40px 0px 20px 10px;
+        text-align: left;
+    }
+
+    #description br{
+        content: ' ';
+    }
+
+    #description img{
+        display: none;
+    }
+
+/*----------------FOOTER----------------------*/
+    footer{
+        text-align: center;
+    }
+
+    #footer-text{
+        padding: 0px;
+    }
+
+    .text-box{
+        text-align: left;
+        padding: 20px 15px 68px 20px;
+    }
+    .text-box br{
+        content: ' ';
+    }
+}
